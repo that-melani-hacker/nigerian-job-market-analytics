@@ -8,8 +8,8 @@ In active development (Day 1)
 
 ## Data Sources
 
-- [Jobberman](https://www.jobberman.com) — Nigerian market jobs (scraping)
-- [MyJobMag](https://www.myjobmag.com) — Nigerian market jobs (scraping) — *coming soon*
+- [Jobberman](https://www.jobberman.com) — Nigerian market jobs (scraping)-Done
+- [MyJobMag](https://www.myjobmag.com) — Nigerian market jobs (scraping) — Done
 - [Remote OK](https://remoteok.com) — International remote jobs (API) — *coming soon*
 
 ## Tech Stack
