@@ -6,6 +6,9 @@ Multi-source labor market intelligence pipeline analyzing 325 job listings from 
 
 🚀 [Try the interactive dashboard](https://nigerian-job-market-analytics.streamlit.app)
 
+
+![Dashboard Preview](dashboard_preview.png)
+
 ## Key Findings
 
 - **Jobberman discloses salary in 81% of listings**, vs. only 3% on Remote OK — a Nigerian local board has dramatically higher transparency than a global tech board
