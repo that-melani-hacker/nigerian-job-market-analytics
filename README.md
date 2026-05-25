@@ -1,49 +1,33 @@
 # Nigerian Job Market Analytics
 
-End-to-end data pipeline that scrapes, cleans, and analyzes job listings from multiple sources to map the Nigerian and international remote labor market.
+Multi-source labor market intelligence pipeline analyzing 325 job listings from three Nigerian and international sources. Built to surface salary transparency patterns, regional demand, and the economic case for remote international work over local employment.
 
-## Status
+## Live Demo
 
-In active development (Day 6)
+🚀 [Try the interactive dashboard](https://your-app.streamlit.app) — *deployment link coming after Step 10c*
 
-## Data Sources
+## Key Findings
 
-- [Jobberman](https://www.jobberman.com) — Nigerian market jobs (scraping)-Done
-- [MyJobMag](https://www.myjobmag.com) — Nigerian market jobs (scraping) — Done
-- [Remote OK](https://remoteok.com) — International remote jobs (API) — Done
+- **Jobberman discloses salary in 81% of listings**, vs. only 3% on Remote OK — a Nigerian local board has dramatically higher transparency than a global tech board
+- **Remote international roles pay roughly 5x more in real terms** than Nigerian local equivalents (USD median $52k vs NGN median ₦200k/month)
+- **Nigerian local market skews toward sales, accounting, and admin** roles, not tech — international remote is where engineering demand concentrates
+
+## Project Components
+
+| Component | Description | File |
+|-----------|-------------|------|
+| Scrapers | Three independent data acquisition pipelines (2 HTML, 1 REST API) | `scrapers/*.py` |
+| ETL | Unified schema across sources, deduplication, salary/date normalization | `scrapers/clean_and_unify.py` |
+| EDA | Exploratory analysis notebook with 12 charts and written findings | `notebooks/01_eda.ipynb` |
+| Dashboard | Interactive Streamlit app with filters, charts, and searchable table | `app/dashboard.py` |
 
 ## Tech Stack
 
-- **Python** — pandas, requests, BeautifulSoup
-- **Streamlit** — interactive web app
-- **SQLite** — local storage
-- **GitHub Actions** — scheduled data refresh
+- **Python 3.14** — core language
+- **BeautifulSoup + lxml** — HTML parsing for Jobberman and MyJobMag
+- **Requests** — REST API integration for Remote OK
+- **Pandas** — data unification, transformation, analysis
+- **Matplotlib + Seaborn** — notebook visualizations
+- **Streamlit** — interactive dashboard
 
-## Project Structure
-
-\`\`\`
-nigerian-job-market-analysis/
-├── scrapers/        # Source-specific scrapers
-├── data/
-│   ├── raw/         # Raw scraped data (timestamped CSVs)
-│   └── processed/   # Cleaned, unified data
-├── notebooks/       # EDA notebooks
-└── app/             # Streamlit application
-\`\`\`
-
-## Setup
-
-\`\`\`bash
-python -m venv venv
-venv\Scripts\Activate.ps1   # Windows
-pip install -r requirements.txt
-\`\`\`
-
-## Day 1 Progress
-
-- ✅ Jobberman scraper built (80 jobs / 5 pages)
-- ✅ Data quality verified (zero missing values across all columns)
-- ✅MyJobMag scraper (Day 2)
-- ✅Remote OK API integration (Day 3)
-- ✅Unified cleaning pipeline (Day 4-5)
-- Streamlit app (Day 6-7)
+## Data Pipeline
