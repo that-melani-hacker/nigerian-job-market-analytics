@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 - ✅ Jobberman scraper built (80 jobs / 5 pages)
 - ✅ Data quality verified (zero missing values across all columns)
-- MyJobMag scraper (Day 2)
-- Remote OK API integration (Day 3)
-- Unified cleaning pipeline (Day 4-5)
+- ✅MyJobMag scraper (Day 2)
+- ✅Remote OK API integration (Day 3)
+- ✅Unified cleaning pipeline (Day 4-5)
 - Streamlit app (Day 6-7)
