@@ -4,7 +4,7 @@ Multi-source labor market intelligence pipeline analyzing 325 job listings from 
 
 ## Live Demo
 
-🚀 [Try the interactive dashboard](https://your-app.streamlit.app) — *deployment link coming after Step 10c*
+🚀 [Try the interactive dashboard](https://nigerian-job-market-analytics.streamlit.app)
 
 ## Key Findings
 
